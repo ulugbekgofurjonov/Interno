@@ -1,12 +1,10 @@
-import Button from "@/components/ui/Button";
-import IconButton from "@/components/ui/IconButton";
-import Projects from "@/components/sections/Projects";
-import SectionTitle from "@/components/ui/SectionTitle";
-import Image from "next/image";
+import { blogs } from '@/data/blogs'  // 1. Import qilish
+import BlogsCard from '@/components/ui/BlogsCard'
+import Projects from '@/components/sections/Projects'
 
 export default function Home() {
   return (
-     <div className="">
+    <div className="">
     </div>
-  );
+  )
 }
