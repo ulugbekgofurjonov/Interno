@@ -1,28 +1,26 @@
-import { Poppins, DM_Serif_Display, Jost } from 'next/font/google'  // 1 ta Jost yetarli
+import { Poppins, DM_Serif_Display, Jost } from 'next/font/google'
 import './globals.css'
+import ClientLayout from './ClientLayout'  // Client komponentni import
 
-// Poppins shrifti
 const poppins = Poppins({
   variable: '--font-poppins',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
 })
 
-// DM Serif Display shrifti
 const dmSerif = DM_Serif_Display({
   variable: '--font-dm-serif',
   subsets: ['latin'],
   weight: ['400'],
 })
 
-// Jost shrifti
 const jost = Jost({
   variable: '--font-jost',
   subsets: ['latin'],
   weight: ['400'],
 })
 
-export const metadata = {
+export const metadata = {  // ✅ Server Component da metadata ishlaydi
   title: "Interno",
   description: "Interior Design Studio",
 }
@@ -30,8 +28,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${dmSerif.variable} ${jost.variable}`}>  {/* Jost qo'shildi */}
-        {children}
+      <body className={`${poppins.variable} ${dmSerif.variable} ${jost.variable}`}>
+        <ClientLayout>  {/* AOS ishlaydigan Client komponent */}
+          {children}
+        </ClientLayout>
       </body>
     </html>
   )
