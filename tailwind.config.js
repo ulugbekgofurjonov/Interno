@@ -7,9 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-       fontFamily: {
+      fontFamily: {
+        jost: ['var(--font-jost)'],
         poppins: ['var(--font-poppins)'],
-        serif: ['var(--font-dm-serif)'], 
+        serif: ['var(--font-dm-serif)'],
       },
     },
   },
