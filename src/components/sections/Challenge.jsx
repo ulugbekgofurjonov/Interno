@@ -9,7 +9,7 @@ export default function Chellange() {
         <div className="flex flex-col md:flex-row items-center gap-20">
           
           {/* Chap qism - Matn */}
-          <div className="flex-1 max-w-sm">
+          <div data-aos="fade-right" className="flex-1 max-w-sm">
             <h2 className="text-5xl font-serif text-[#1a1a2e] leading-tight mb-6">
               We Tackle The Most Challenging Designs
             </h2>
@@ -45,7 +45,7 @@ export default function Chellange() {
           </div>
 
           {/* O'ng qism - Rasm */}
-          <div className="flex-1 flex justify-end">
+          <div data-aos="fade-left" className="flex-1 flex justify-end">
             <img
               src="/images/bg2.png"
               alt="Challenging Designs"
