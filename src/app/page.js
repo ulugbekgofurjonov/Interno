@@ -18,6 +18,7 @@ export default function Home() {
         <Challenge/>
         <Testimonials/>
         <Brands/>
+        <Projects/>
       </main>
     </div>
 
