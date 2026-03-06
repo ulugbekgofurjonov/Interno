@@ -6,6 +6,7 @@ import Hero from '@/components/sections/Hero'
 import Services from '@/components/sections/Services'
 import Challenge from '@/components/sections/Challenge'
 import Testimonials from '@/components/sections/Testimonials'
+import Brands from '@/components/sections/Brands'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Services/>
         <Challenge/>
         <Testimonials/>
+        <Brands/>
       </main>
     </div>
 
