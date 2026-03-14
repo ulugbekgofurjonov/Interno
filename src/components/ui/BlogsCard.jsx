@@ -1,3 +1,4 @@
+// BlogsCard.jsx
 import Image from "next/image";
 import IconButton from "./IconButton";
 import Container from "./Container";
@@ -7,9 +8,14 @@ export default function BlogsCard() {
   return (
     <Container>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
-        {blogs.map((blog) => (
-          <div key={blog.id} className="bg-white rounded-3xl shadow-sm border border-gray-100 p-3">
-            
+        {blogs.map((blog, index) => (
+          <div
+            key={blog.id}
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay={index * 100}
+            className="bg-white rounded-3xl shadow-sm border border-gray-100 p-3"
+          >
             {/* Rasm */}
             <div className="relative rounded-2xl overflow-hidden mb-4">
               <Image
@@ -34,7 +40,6 @@ export default function BlogsCard() {
                 <IconButton variant="primary" direction="right" />
               </div>
             </div>
-
           </div>
         ))}
       </div>

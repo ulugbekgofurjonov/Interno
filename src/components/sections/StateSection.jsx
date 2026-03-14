@@ -7,7 +7,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="bg-[#f5f0eb] py-12 px-6 md:py-16 md:px-8">
+    <section  data-aos="fade-up" className="bg-[#f5f0eb] py-12 px-6 md:py-16 md:px-8">
       <div className="grid grid-cols-2 md:flex md:flex-nowrap md:items-center md:justify-center">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col md:flex-row items-center">

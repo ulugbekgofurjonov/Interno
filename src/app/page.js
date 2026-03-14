@@ -8,6 +8,7 @@ import Challenge from '@/components/sections/Challenge'
 import Testimonials from '@/components/sections/Testimonials'
 import Brands from '@/components/sections/Brands'
 import StatsSection from '@/components/sections/StateSection'
+import Blogs from '@/components/sections/Blogs'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Brands/>
         <Projects/>
         <StatsSection/>
+        <Blogs/>
       </main>
     </div>
 
