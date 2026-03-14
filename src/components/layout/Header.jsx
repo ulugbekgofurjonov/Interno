@@ -16,9 +16,9 @@ const Header = () => {
       <Container>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="">
+          <Link href="/">
             <img
-              src="/Images/logo.png"
+              src="/images/logo.png"
               alt="Interno Logo"
               className="w-32 md:w-40 lg:w-48 h-auto"
             />
@@ -44,7 +44,6 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {isOpen ? (
-              // X icon (close)
               <svg
                 className="w-6 h-6 transition-transform duration-300 rotate-90"
                 fill="none"
@@ -59,7 +58,6 @@ const Header = () => {
                 />
               </svg>
             ) : (
-              // Hamburger icon (menu)
               <svg
                 className="w-6 h-6"
                 fill="none"
