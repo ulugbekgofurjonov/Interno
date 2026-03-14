@@ -10,6 +10,7 @@ import Brands from '@/components/sections/Brands'
 import StatsSection from '@/components/sections/StateSection'
 import Blogs from '@/components/sections/Blogs'
 import CTA from '@/components/sections/CTA'
+import Footer from '@/components/layout/Footer'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <StatsSection/>
         <Blogs/>
         <CTA/>
+        <Footer/>
       </main>
     </div>
 
