@@ -9,6 +9,7 @@ import Testimonials from '@/components/sections/Testimonials'
 import Brands from '@/components/sections/Brands'
 import StatsSection from '@/components/sections/StateSection'
 import Blogs from '@/components/sections/Blogs'
+import CTA from '@/components/sections/CTA'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Projects/>
         <StatsSection/>
         <Blogs/>
+        <CTA/>
       </main>
     </div>
 
