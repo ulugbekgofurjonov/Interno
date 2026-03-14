@@ -9,7 +9,7 @@ export default function Hero() {
       <Image
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
-        src="/Images/bg1.png"
+        src="/images/bg1.png"
         alt="Hero background"
         fill
         className="object-cover"
