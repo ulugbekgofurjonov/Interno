@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Interno — Interior Design Studio
 
-## Getting Started
+![Interno Logo](https://interno-ug.vercel.app/images/logo.png)
 
-First, run the development server:
+**Interno** is a modern interior design studio website built with Next.js and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🔗 **Live Demo:** [interno-ug.vercel.app](https://interno-ug.vercel.app)
+
+---
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) — React framework
+- [Tailwind CSS](https://tailwindcss.com/) — CSS utility framework
+- [AOS](https://michaelosthege.github.io/aos/) — Animate On Scroll
+- Google Fonts — DM Serif Display, Poppins, Jost
+
+---
+
+## Sections
+
+| Section | Description |
+|---|---|
+| Hero | Main banner with background image and CTA button |
+| Services | 3 types of interior design services |
+| Challenge | About the company with key highlights |
+| Projects | 4 featured project cards |
+| Stats | 12 years experience, 5K projects, 1K active, 4K customers |
+| Testimonials | Client reviews and feedback |
+| Brands | Partner brand logos |
+| Blogs | 6 recent blog posts |
+| CTA | Contact call-to-action banner |
+| Footer | Navigation links and contact info |
+
+---
+
+## Folder Structure
+
+```
+interno/
+├── public/
+│   └── images/              # All images and assets
+├── src/
+│   ├── app/
+│   │   ├── layout.js        # Root layout + fonts
+│   │   ├── page.js          # Main page
+│   │   ├── globals.css
+│   │   └── ClientLayout.js  # AOS wrapper
+│   ├── components/
+│   │   ├── layout/
+│   │   │   └── Header.jsx
+│   │   ├── sections/
+│   │   │   ├── Hero.jsx
+│   │   │   ├── Services.jsx
+│   │   │   ├── Challenge.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   ├── StateSection.jsx
+│   │   │   ├── Testimonials.jsx
+│   │   │   ├── Brands.jsx
+│   │   │   ├── Blogs.jsx
+│   │   │   └── CTA.jsx
+│   │   └── ui/
+│   │       ├── Button.jsx
+│   │       ├── BlogsCard.jsx
+│   │       ├── Card.jsx
+│   │       ├── Container.jsx
+│   │       ├── IconButton.jsx
+│   │       └── SectionTitle.jsx
+│   └── data/
+│       ├── navLinks.js
+│       ├── blogs.js
+│       ├── projects.js
+│       └── testimonials.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Ulugbek Gofurjonov** — [GitHub](https://github.com/ulugbekgofurjonov)
